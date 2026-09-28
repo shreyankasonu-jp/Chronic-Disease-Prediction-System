@@ -1,0 +1,10 @@
+Flask
+Flask-Cors
+numpy
+scikit-learn
+Pillow
+opencv-python-headless
+h5py
+tensorflow-cpu
+joblib
+imbalanced-learn
