@@ -1,73 +1,111 @@
-# Welcome to your Lovable project
+# Chronic Disease Prediction System
 
-## Project info
+A machine learning-based web application that helps predict the possibility of different chronic diseases using patient-provided information and medical images.
 
-**URL**: https://lovable.dev/projects/e800cfbc-b7ee-43fd-a781-9c4af26f1fc0
+## Project Overview
 
-## How can I edit this code?
+The Chronic Disease Prediction System is designed to provide prediction results for:
 
-There are several ways of editing your application.
+- Diabetes
+- Stroke
+- Pneumonia
 
-**Use Lovable**
+The system uses different machine learning and deep learning models depending on the disease.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e800cfbc-b7ee-43fd-a781-9c4af26f1fc0) and start prompting.
+## Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
+### Frontend
 - React
-- shadcn-ui
+- TypeScript
+- Vite
 - Tailwind CSS
 
-## How can I deploy this project?
+### Backend
+- Python
+- Flask
+- REST API
 
-Simply open [Lovable](https://lovable.dev/projects/e800cfbc-b7ee-43fd-a781-9c4af26f1fc0) and click on Share -> Publish.
+### Machine Learning
+- CNN
+- Logistic Regression
+- Random Forest
+- Scikit-learn
+- TensorFlow/Keras
 
-## Can I connect a custom domain to my Lovable project?
+### Database / Storage
+- Local Storage
+- Machine Learning Model Files
 
-Yes, you can!
+## Features
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- User Login and Authentication
+- Diabetes Prediction
+- Stroke Prediction
+- Pneumonia Detection from X-ray Images
+- Dashboard
+- Prediction Results
+- Medical Information
+- Responsive User Interface
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Machine Learning Models
+
+| Disease | Model |
+|---|---|
+| Diabetes | Random Forest |
+| Stroke | Logistic Regression |
+| Pneumonia | CNN |
+
+## Project Structure
+
+```text
+Chronic-Disease-Prediction-System/
+│
+├── backend/
+│   ├── app.py
+│   ├── requirements.txt
+│   └── models/
+│
+├── Frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.ts
+│
+├── README.md
+└── .gitignoreRead more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+How It Works
+User logs into the system.
+User selects a disease prediction module.
+Required information or medical image is provided.
+The backend processes the input using the corresponding machine learning model.
+The prediction result is displayed to the user.
+
+How to Run
+Backend
+cd backend
+pip install -r requirements.txt
+python app.py
+
+Frontend
+cd Frontend
+npm install
+npm run dev
+
+Future Scope
+Improve model accuracy with larger datasets
+Add more disease prediction modules
+Deploy the application to the cloud
+Add real-time monitoring features
+Develop a mobile application
+Disclaimer
+
+This project is developed for educational purposes. The predictions provided by the system should not be considered a medical diagnosis or a substitute for professional medical advice.
+
+### One important correction
+
+Your project uses **Logistic Regression for stroke** and **Random Forest for diabetes**, so keep that table only if it matches your actual code.
+
+For **Pneumonia**, your large `pneumonia_model.h5` wasn't uploaded to GitHub, so don't claim that someone can run the pneumonia CNN directly from the repository unless you provide a way to obtain that model.
+
+After pasting this into `README.md`, click **Commit changes → Commit directly to main**.
